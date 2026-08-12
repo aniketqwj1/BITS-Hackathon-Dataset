@@ -1,0 +1,746 @@
+{
+  "tables": {
+    "bonds": {
+      "row_count": 60,
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 60,
+            "avg": 30.5,
+            "nulls": 0,
+            "total": 60
+          }
+        },
+        "bond_no": {
+          "type": "TEXT",
+          "samples": [
+            "BG/101",
+            "BG/105",
+            "BG/120",
+            "BG/128",
+            "BG/132",
+            "BG/136",
+            "BG/143",
+            "BG/16",
+            "BG/160",
+            "BG/174",
+            "BG/181",
+            "BG/189"
+          ]
+        },
+        "category": {
+          "type": "TEXT",
+          "samples": [
+            "Bridges Flyovers",
+            "Buildings",
+            "Industrial Epc",
+            "Irrigation",
+            "Roads Highways",
+            "Sewerage Drainage",
+            "Water Treatment"
+          ]
+        },
+        "rfp_number": {
+          "type": "TEXT",
+          "samples": [
+            "RFP-132000485",
+            "RFP-132000970",
+            "RFP-132002522",
+            "RFP-132003007",
+            "RFP-132003201",
+            "RFP-132004559",
+            "RFP-132006111",
+            "RFP-132006596",
+            "RFP-132006693",
+            "RFP-132006790",
+            "RFP-132007372",
+            "RFP-132008536"
+          ]
+        },
+        "amount": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 5214000,
+            "max": 39665000,
+            "avg": 13414478.3,
+            "nulls": 37,
+            "total": 60
+          }
+        },
+        "issue_date": {
+          "type": "TEXT",
+          "samples": [
+            "2019-06-17",
+            "2019-10-08",
+            "2019-10-24",
+            "2019-11-03",
+            "2019-11-14",
+            "2020-04-19",
+            "2020-06-23",
+            "2020-07-24",
+            "2020-08-09",
+            "2020-08-19",
+            "2020-09-17",
+            "2020-09-24"
+          ]
+        },
+        "expiry_date": {
+          "type": "TEXT",
+          "samples": []
+        }
+      },
+      "notes": "One row per performance bond (60). bond_no, category, rfp_number, amount (rupees int), issue_date, expiry_date. Links to tenders via rfp_number, not pkg_number."
+    },
+    "credentials": {
+      "row_count": 48,
+      "columns": {
+        "credential_id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 48,
+            "avg": 24.5,
+            "nulls": 0,
+            "total": 48
+          }
+        },
+        "engineer_id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 39,
+            "avg": 20.4,
+            "nulls": 0,
+            "total": 48
+          }
+        },
+        "credential_type": {
+          "type": "TEXT",
+          "samples": [
+            "PMP",
+            "Six Sigma Black Belt"
+          ]
+        },
+        "credential_number": {
+          "type": "TEXT",
+          "samples": [
+            "6S-500156",
+            "6S-500157",
+            "6S-500158",
+            "6S-500159",
+            "6S-500160",
+            "6S-500161",
+            "6S-500162",
+            "6S-500163",
+            "6S-500164",
+            "PMI-200006",
+            "PMI-200007",
+            "PMI-200008"
+          ]
+        },
+        "issue_date": {
+          "type": "TEXT",
+          "samples": [
+            "2021-03-10",
+            "2023-01-01"
+          ]
+        },
+        "valid_through": {
+          "type": "TEXT",
+          "samples": [
+            "2027-08-31",
+            "2028-01-01",
+            "2029-09-15"
+          ]
+        }
+      },
+      "notes": "One row per engineer credential (48). credential_type is 'PMP' or 'Six Sigma Black Belt'. credential_number is like 'PMI-200029' or '6S-500161'. issue_date is ISO. Join to engineers via engineer_id."
+    },
+    "engineers": {
+      "row_count": 39,
+      "columns": {
+        "engineer_id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 39,
+            "avg": 20.0,
+            "nulls": 0,
+            "total": 39
+          }
+        },
+        "name": {
+          "type": "TEXT",
+          "samples": [
+            "Amit Iyer",
+            "Amit Mukherjee",
+            "Asha Bose",
+            "Asha Nair",
+            "Chandan Banerjee",
+            "Deepa Chatterjee",
+            "Divya Singh",
+            "Farhan Khan",
+            "Farhan Rao",
+            "Farhan Roy",
+            "Gautam Joshi",
+            "Imran Joshi"
+          ]
+        },
+        "employee_id": {
+          "type": "TEXT",
+          "samples": [
+            "EMP-001",
+            "EMP-002",
+            "EMP-003",
+            "EMP-004",
+            "EMP-005",
+            "EMP-006",
+            "EMP-007",
+            "EMP-008",
+            "EMP-009",
+            "EMP-010",
+            "EMP-011",
+            "EMP-012"
+          ]
+        },
+        "designation": {
+          "type": "TEXT",
+          "samples": []
+        },
+        "business_unit": {
+          "type": "TEXT",
+          "samples": [
+            "Civil Construction & Infrastructure",
+            "Facility Maintenance & O&M",
+            "Industrial EPC",
+            "Small Works Division",
+            "Special Projects Division",
+            "Specialized Technical Services"
+          ]
+        },
+        "qualification": {
+          "type": "TEXT",
+          "samples": [
+            "B.Com",
+            "B.E. Civil",
+            "B.Tech Civil",
+            "B.Tech Electrical",
+            "B.Tech Mechanical",
+            "Diploma Civil",
+            "M.Tech Structural",
+            "MBA"
+          ]
+        }
+      },
+      "notes": "One row per engineer (48). name is the full name; employee_id is EMP-xxxxx. Join to projects via projects.project_manager = engineers.name. Join to credentials via credentials.engineer_id."
+    },
+    "financial": {
+      "row_count": 518,
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 518,
+            "avg": 259.5,
+            "nulls": 0,
+            "total": 518
+          }
+        },
+        "invoice_no": {
+          "type": "TEXT",
+          "samples": [
+            "AR-2019-00007",
+            "AR-2019-00008",
+            "AR-2019-00009",
+            "AR-2019-00012",
+            "AR-2019-00017",
+            "AR-2019-00022",
+            "AR-2019-00054",
+            "AR-2020-00001",
+            "AR-2020-00002",
+            "AR-2020-00003",
+            "AR-2020-00010",
+            "AR-2020-00011"
+          ]
+        },
+        "client_name": {
+          "type": "TEXT",
+          "samples": [
+            "Arunodaya Infrastructure",
+            "Central Works & Buildings Bureau",
+            "Gujarat Municipal Corporation",
+            "Irrigation & Waterways Dept, Govt of Rajasthan",
+            "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
+            "Jal Nigam, Gujarat",
+            "Jal Nigam, Jharkhand",
+            "Lakshya Engineering & Construction",
+            "Mahanadi Steel Corporation",
+            "Maharashtra Municipal Corporation",
+            "Mega Infrastructure Authority",
+            "Meridian Constructors & Co."
+          ]
+        },
+        "invoice_date": {
+          "type": "TEXT",
+          "samples": [
+            "2019-07-06",
+            "2019-09-17",
+            "2019-10-02",
+            "2019-10-11",
+            "2019-11-29",
+            "2019-12-01",
+            "2019-12-20",
+            "2020-01-01",
+            "2020-02-04",
+            "2020-02-10",
+            "2020-02-15",
+            "2020-02-20"
+          ]
+        },
+        "invoiced": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1541921,
+            "max": 67434643,
+            "avg": 33783783.3,
+            "nulls": 0,
+            "total": 518
+          }
+        },
+        "status": {
+          "type": "TEXT",
+          "samples": [
+            "due",
+            "paid",
+            "part_paid"
+          ]
+        },
+        "received": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 0,
+            "max": 74852454,
+            "avg": 28703054.2,
+            "nulls": 0,
+            "total": 518
+          }
+        },
+        "outstanding": {
+          "type": "INTEGER",
+          "stats": {
+            "min": -9820053,
+            "max": 67434643,
+            "avg": 5080729.0,
+            "nulls": 0,
+            "total": 518
+          }
+        },
+        "pkg_number": {
+          "type": "TEXT",
+          "samples": []
+        }
+      },
+      "notes": "One row per AR invoice (519). invoice_no like 'AR-2019-00007'. client_name is the client. invoiced / received / outstanding are rupees (int). status is 'paid' / 'due' / 'part_paid'. pkg_number is populated where the invoice maps to a project (may be NULL). Join to projects via pkg_number, or to clients via client_name."
+    },
+    "projects": {
+      "row_count": 155,
+      "columns": {
+        "project_id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 155,
+            "avg": 78.0,
+            "nulls": 0,
+            "total": 155
+          }
+        },
+        "pkg_number": {
+          "type": "TEXT",
+          "samples": [
+            "Pkg-1",
+            "Pkg-10",
+            "Pkg-100",
+            "Pkg-101",
+            "Pkg-102",
+            "Pkg-103",
+            "Pkg-104",
+            "Pkg-105",
+            "Pkg-106",
+            "Pkg-107",
+            "Pkg-108",
+            "Pkg-109"
+          ]
+        },
+        "project_name": {
+          "type": "TEXT",
+          "samples": [
+            "BitUminoUs overlay \u2014 odisha PkG-35",
+            "BitUminoUs overlay \u2014 odisha PkG-63",
+            "Box CUlvert Chain \u2014 madhya Pradesh PkG-57",
+            "Box CUlvert Chain \u2014 tamil nadU PkG-92",
+            "CaBle stayed BridGe \u2014 Jharkhand PkG-115",
+            "CaBle stayed BridGe \u2014 Uttar Pradesh PkG-121",
+            "CaBle stayed BridGe \u2014 delhi PkG-109",
+            "Canal lininG \u2014 Uttar Pradesh PkG-48",
+            "Canal lininG \u2014 delhi PkG-34",
+            "Canal lininG \u2014 tamil nadU PkG-90",
+            "CheCk dam \u2014 GUJarat PkG-62",
+            "CheCk dam \u2014 Uttar Pradesh PkG-83"
+          ]
+        },
+        "category": {
+          "type": "TEXT",
+          "samples": [
+            "Bridges Flyovers",
+            "Buildings",
+            "Expressways",
+            "Industrial Epc",
+            "Irrigation",
+            "Large Bridges",
+            "Roads Highways",
+            "Roads Maintenance",
+            "Sewerage Drainage",
+            "Small Buildings",
+            "Tunnels",
+            "Water Supply"
+          ]
+        },
+        "client_name": {
+          "type": "TEXT",
+          "samples": [
+            "Arunodaya Infrastructure",
+            "Central Works & Buildings Bureau",
+            "Gujarat Municipal Corporation",
+            "Irrigation & Waterways Dept, Govt of Rajasthan",
+            "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
+            "Irrigation & Waterways Dept, Govt of West Bengal",
+            "Jal Nigam, Gujarat",
+            "Jal Nigam, Jharkhand",
+            "Jal Nigam, Uttar Pradesh",
+            "Jharkhand Municipal Corporation",
+            "Lakshya Engineering & Construction",
+            "Mahanadi Steel Corporation"
+          ]
+        },
+        "value": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 10600000,
+            "max": 2000000000,
+            "avg": 356800000.0,
+            "nulls": 0,
+            "total": 155
+          }
+        },
+        "completion_date": {
+          "type": "TEXT",
+          "samples": [
+            "2010-02-26",
+            "2010-03-01",
+            "2010-07-29",
+            "2010-08-13",
+            "2010-08-20",
+            "2010-08-23",
+            "2010-09-30",
+            "2010-10-16",
+            "2010-11-17",
+            "2010-12-11",
+            "2011-02-04",
+            "2011-02-06"
+          ]
+        },
+        "issuance_date": {
+          "type": "TEXT",
+          "samples": [
+            "2010-02-26",
+            "2010-03-01",
+            "2010-07-29",
+            "2010-08-13",
+            "2010-08-20",
+            "2010-08-23",
+            "2010-09-30",
+            "2010-10-16",
+            "2010-11-17",
+            "2010-12-11",
+            "2011-02-04",
+            "2011-02-06"
+          ]
+        },
+        "project_manager": {
+          "type": "TEXT",
+          "samples": [
+            "Amit Iyer",
+            "Amit Mukherjee",
+            "Asha Nair",
+            "Chandan Banerjee",
+            "Deepa Chatterjee",
+            "Divya Singh",
+            "Farhan Khan",
+            "Farhan Rao",
+            "Farhan Roy",
+            "Gautam Joshi",
+            "Imran Joshi",
+            "Jaya Desai"
+          ]
+        },
+        "has_reference_letter": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 0,
+            "max": 1,
+            "avg": 0.9,
+            "nulls": 0,
+            "total": 155
+          }
+        },
+        "grading": {
+          "type": "TEXT",
+          "samples": [
+            "Excellent",
+            "Good",
+            "Satisfactory",
+            "Very Good"
+          ]
+        },
+        "cert_ref": {
+          "type": "TEXT",
+          "samples": [
+            "CC/1/2014/090",
+            "CC/10/2016/143",
+            "CC/10/2024/009",
+            "CC/11/2019/140",
+            "CC/11/2021/069",
+            "CC/12/2012/073",
+            "CC/12/2018/105",
+            "CC/12/2021/013",
+            "CC/13/2010/008",
+            "CC/14/2013/077",
+            "CC/14/2019/111",
+            "CC/15/2016/046"
+          ]
+        },
+        "role": {
+          "type": "TEXT",
+          "samples": [
+            "JV\nPartner",
+            "JV Partner",
+            "Prime"
+          ]
+        },
+        "source_docs": {
+          "type": "TEXT",
+          "samples": [
+            "PPP"
+          ]
+        }
+      },
+      "notes": "One row per completed work (155). PRIMARY entity table. pkg_number is the canonical key (e.g. 'Pkg-21'); project_name embeds it. value is the contract value in rupees (int). has_reference_letter is 1/0. project_manager is the engineer's full name. completion_date / issuance_date are ISO dates. category is the work classification. grading is the completion grade. role is 'Prime' or 'JV'."
+    },
+    "raw_documents": {
+      "row_count": 1953,
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 1953,
+            "avg": 977.0,
+            "nulls": 0,
+            "total": 1953
+          }
+        },
+        "doc_id": {
+          "type": "TEXT",
+          "samples": [
+            "DOC-AR-2024",
+            "DOC-AR-2025",
+            "DOC-BANK-2019",
+            "DOC-BANK-2020",
+            "DOC-BANK-2021",
+            "DOC-BANK-2022",
+            "DOC-BANK-2023",
+            "DOC-BANK-2024",
+            "DOC-BANK-2025",
+            "DOC-BANK-2026",
+            "DOC-BOND-00005",
+            "DOC-BOND-00006"
+          ]
+        },
+        "filename": {
+          "type": "TEXT",
+          "samples": [
+            "DOC-AR-2024.pdf",
+            "DOC-AR-2025.pdf",
+            "DOC-BANK-2019.pdf",
+            "DOC-BANK-2020.pdf",
+            "DOC-BANK-2021.pdf",
+            "DOC-BANK-2022.pdf",
+            "DOC-BANK-2023.pdf",
+            "DOC-BANK-2024.pdf",
+            "DOC-BANK-2025.pdf",
+            "DOC-BANK-2026.pdf",
+            "DOC-BOND-00005.pdf",
+            "DOC-BOND-00006.pdf"
+          ]
+        },
+        "page_number": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 72,
+            "avg": 11.7,
+            "nulls": 0,
+            "total": 1953
+          }
+        },
+        "content": {
+          "type": "TEXT",
+          "samples": [
+            "--- DOC-AR-2024 page 1 ---\nNational Infrastructure Corp. Ltd\u2026",
+            "--- DOC-AR-2024 page 10 ---\nANNEXURE \u2014 VARIATION ORDERS APPR\u2026",
+            "--- DOC-AR-2024 page 11 ---\nANNEXURE \u2014 TRADE RECEIVABLES AGE\u2026",
+            "--- DOC-AR-2024 page 12 ---\nINDEPENDENT AUDITOR'S REPORT\nTo \u2026",
+            "--- DOC-AR-2024 page 13 ---\nANNEXURE \u2014 TRIAL BALANCE AS AT 3\u2026",
+            "--- DOC-AR-2024 page 14 ---\nANNEXURE \u2014 FIXED ASSET REGISTER \u2026",
+            "--- DOC-AR-2024 page 15 ---\n34 Concrete Batching Plant Earth\u2026",
+            "--- DOC-AR-2024 page 16 ---\n69 Soil Compactor EarthMaster Eq\u2026",
+            "--- DOC-AR-2024 page 17 ---\n104 Transit Mixer Vulcan Plant W\u2026",
+            "--- DOC-AR-2024 page 18 ---\n139 Piling Rig IndoCrane Industr\u2026",
+            "--- DOC-AR-2024 page 2 ---\nDIRECTORS' REPORT\nYour Directors \u2026",
+            "--- DOC-AR-2024 page 3 ---\nMANAGEMENT DISCUSSION & ANALYSIS\n\u2026"
+          ]
+        },
+        "metadata": {
+          "type": "TEXT",
+          "samples": [
+            "{\"doc_type\": \"annual_report\"}",
+            "{\"doc_type\": \"bank_statement\"}",
+            "{\"doc_type\": \"company_completion_certificate\"}",
+            "{\"doc_type\": \"completion_certificate\"}",
+            "{\"doc_type\": \"compliance_matrix\"}",
+            "{\"doc_type\": \"cv\"}",
+            "{\"doc_type\": \"final_ra_bill\"}",
+            "{\"doc_type\": \"financial_statement\"}",
+            "{\"doc_type\": \"general_ledger_book\"}",
+            "{\"doc_type\": \"iso_certificate\"}",
+            "{\"doc_type\": \"past_performance_portfolio\"}",
+            "{\"doc_type\": \"performance_bond\"}"
+          ]
+        },
+        "timestamp": {
+          "type": "DATETIME",
+          "stats": {
+            "min": "2026-08-12 16:41:00",
+            "max": "2026-08-12 16:42:01",
+            "avg": 2026.0,
+            "nulls": 0,
+            "total": 1953
+          }
+        }
+      },
+      "notes": "Fallback full-text layer: one row per extracted page (1953). content is the raw text. Use doc_fts (FTS5) to search it when structured tables come up empty."
+    },
+    "reference_letters": {
+      "row_count": 132,
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "stats": {
+            "min": 1,
+            "max": 132,
+            "avg": 66.5,
+            "nulls": 0,
+            "total": 132
+          }
+        },
+        "pkg_number": {
+          "type": "TEXT",
+          "samples": [
+            "Pkg-1",
+            "Pkg-10",
+            "Pkg-100",
+            "Pkg-102",
+            "Pkg-104",
+            "Pkg-105",
+            "Pkg-106",
+            "Pkg-107",
+            "Pkg-108",
+            "Pkg-109",
+            "Pkg-11",
+            "Pkg-110"
+          ]
+        },
+        "project_name": {
+          "type": "TEXT",
+          "samples": [
+            "Anganwadi Centre \u2014 Gujarat Pkg-151",
+            "Bituminous Overlay \u2014 Odisha Pkg-35",
+            "Box Culvert Chain \u2014 Madhya Pradesh Pkg-57",
+            "Box Culvert Chain \u2014 Tamil Nadu Pkg-92",
+            "Cable Stayed Bridge \u2014 Delhi Pkg-109",
+            "Cable Stayed Bridge \u2014 Uttar Pradesh Pkg-121",
+            "Canal Lining \u2014 Delhi Pkg-34",
+            "Canal Lining \u2014 Tamil Nadu Pkg-90",
+            "Check Dam \u2014 Delhi Pkg-55",
+            "Check Dam \u2014 Delhi Pkg-76",
+            "Check Dam \u2014 Gujarat Pkg-62",
+            "Check Dam \u2014 Maharashtra Pkg-69"
+          ]
+        },
+        "client_name": {
+          "type": "TEXT",
+          "samples": [
+            "Arunodaya Infrastructure",
+            "Central Works & Buildings Bureau",
+            "Gujarat Municipal Corporation",
+            "Irrigation & Waterways Dept, Govt of Rajasthan",
+            "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
+            "Irrigation & Waterways Dept, Govt of West",
+            "JAL NIGAM, GUJARAT",
+            "Jal Nigam, Jharkhand",
+            "Jal Nigam, Uttar Pradesh",
+            "Jharkhand Municipal Corporation",
+            "LAKSHYA ENGINEERING & CONSTRUCTION",
+            "Lakshya Engineering & Construction"
+          ]
+        },
+        "doc_id": {
+          "type": "TEXT",
+          "samples": [
+            "DOC-REF-001",
+            "DOC-REF-002",
+            "DOC-REF-003",
+            "DOC-REF-004",
+            "DOC-REF-005",
+            "DOC-REF-006",
+            "DOC-REF-007",
+            "DOC-REF-008",
+            "DOC-REF-009",
+            "DOC-REF-010",
+            "DOC-REF-011",
+            "DOC-REF-012"
+          ]
+        }
+      },
+      "notes": "One row per reference letter (132). pkg_number links to projects. Presence of a row here means the project HAS a reference letter."
+    }
+  },
+  "family_map": {
+    "absence": "projects.has_reference_letter (1/0) + reference_letters table. Count projects for a client with has_reference_letter=0, or check reference_letters for a pkg_number.",
+    "date_span": "projects.completion_date / issuance_date + credentials.issue_date. Use julianday() difference for whole days.",
+    "distinct_count": "projects.category (or project_name) filtered by project_manager / client.",
+    "hop_aggregate": "projects.value summed over a chain: credentials \u2192 engineers \u2192 projects (via project_manager) \u2192 client \u2192 all that client's projects.",
+    "temporal_chain": "projects.value summed where completion_date is after (or before) a credential issue_date, for a given engineer.",
+    "avg_work_size": "AVG(projects.value) over a client's projects (or an engineer's projects).",
+    "exclusion_aggregate": "SUM(projects.value) for a client EXCLUDING one or more categories.",
+    "gap_to_threshold": "SUM(projects.value) for a client, then threshold - sum (or sum - threshold).",
+    "rank_value": "ORDER BY projects.value DESC for a client; difference between rank 1 and rank 2.",
+    "referenced_share": "COUNT(projects) with has_reference_letter=1 / total COUNT(projects) for a client, expressed as a percentage.",
+    "threshold_aggregate": "SUM(projects.value) for a client where value >= (or >) a crore threshold.",
+    "financial_reconciliation": "financial table: SUM(invoiced), SUM(received), SUM(outstanding) per client; billed vs collected percentage."
+  }
+}
