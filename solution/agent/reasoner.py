@@ -7,8 +7,10 @@ Design:
     never has to guess spellings or resolve abbreviations blindly.
   - The reasoner then fetches the relevant rows with trivial, template SQL and does
     the arithmetic in Python. This keeps SQL syntax-error-free and the math auditable.
-  - If the LLM call fails or returns an unusable plan, a deterministic keyword parser
-    falls back to a best-effort plan so every question still gets an answer.
+  - A deterministic extractor extracts filters (thresholds, dates) from the question
+    and merges them into the LLM's plan to prevent "forgetting" constraints in
+    conversational prompts.
+  - If the LLM call fails, the deterministic plan is used as a fallback.
 
 The answer is always a plain number (money in rupees, a count, a percentage out of
 100, or a number of days) — see evaluate.py.
@@ -17,6 +19,7 @@ import json
 import os
 import re
 import urllib.request
+import statistics
 
 from .tools import (
     execute_sql, fts_search, load_entities, resolve_engineer,
@@ -123,14 +126,12 @@ def _parse_plan(text):
     if not text:
         return None
     text = text.strip()
-    # Strip markdown fences if present
     if text.startswith("```"):
         text = re.sub(r"^```(?:json)?\s*", "", text)
         text = re.sub(r"\s*```$", "", text)
     try:
         plan = json.loads(text)
     except json.JSONDecodeError:
-        # Try to find the first {...} block
         m = re.search(r"\{.*\}", text, re.S)
         if not m:
             return None
@@ -147,7 +148,6 @@ def _parse_plan(text):
 # Deterministic extraction (used as fallback AND to fill gaps in the LLM plan)
 # ---------------------------------------------------------------------------
 
-# Work categories as stored in the projects table (normalized for matching).
 _CATEGORIES = [
     "Bridges Flyovers", "Buildings", "Expressways", "Industrial Epc",
     "Irrigation", "Large Bridges", "Roads Highways", "Roads Maintenance",
@@ -516,7 +516,6 @@ def _compute(plan, projects, financial, credential):
     if op == "avg_minus_median":
         if not values:
             return None
-        import statistics
         avg = sum(values) / len(values)
         med = statistics.median(values)
         return round(avg - med)
