@@ -101,23 +101,6 @@
   "date_dir": null,
   "answer_type": "percent"
  },
- "i\u2019m pretty sure pooja bose\u2019s pmp for the madhya pradesh water plant was issued back in march 2021, but do you know how many days actually elapsed before that project wrapped up?": {
-  "operation": "days",
-  "engineer": "Pooja Bose",
-  "credential_number": null,
-  "reference_project": "Water treatment Plant \u2014 madhya Pradesh PkG-23",
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": "before",
-  "answer_type": "days"
- },
  "community centre \u2014 uttar pradesh pkg-139\u2019s client: what\u2019s the average size of all work we\u2019ve finished for them, and i need that number by 2 pm for the bid cutoff?": {
   "operation": "avg",
   "engineer": null,
@@ -134,6 +117,23 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "money"
+ },
+ "i\u2019m pretty sure pooja bose\u2019s pmp for the madhya pradesh water plant was issued back in march 2021, but do you know how many days actually elapsed before that project wrapped up?": {
+  "operation": "days",
+  "engineer": "Pooja Bose",
+  "credential_number": null,
+  "reference_project": "Water treatment Plant \u2014 madhya Pradesh PkG-23",
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": "before",
+  "answer_type": "days"
  },
  "i\u2019m still finding my way around the bid desk, but could you quickly tell me the combined value of all the west bengal irrigation and waterways projects that meet or exceed the forty crore threshold?": {
   "operation": "sum_threshold",
@@ -169,23 +169,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "subarnarekha valley corporation's active projects require a final reconciliation, so what is the net shortfall between our awarded contract values and the amounts we have formally billed?": {
-  "operation": "sum",
-  "engineer": null,
-  "credential_number": null,
-  "reference_project": null,
-  "client": "Subarnarekha Valley Corporation",
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
  "pmp; farhan rao, could you please confirm the total number of distinct work categories he has successfully led to completion?": {
   "operation": "distinct_count",
   "engineer": "Farhan Rao",
@@ -202,6 +185,23 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "count"
+ },
+ "subarnarekha valley corporation's active projects require a final reconciliation, so what is the net shortfall between our awarded contract values and the amounts we have formally billed?": {
+  "operation": "sum",
+  "engineer": null,
+  "credential_number": null,
+  "reference_project": null,
+  "client": "Subarnarekha Valley Corporation",
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
  },
  "cross-checking the jharkhand pkg-131 pipeline laying entry for gautam joshi, whose pmp was issued 2021-03-10, what is the interval from that issue date to the completion date?": {
   "operation": "days",
@@ -424,23 +424,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "sunita joshi\u2019s pmp issued 2021-03-10\u2014what\u2019s the combined value of the projects she led that completed after that date, since we need it to lock the bid submission?": {
-  "operation": "sum",
-  "engineer": "Sunita Joshi",
-  "credential_number": null,
-  "reference_project": null,
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": "2021-03-10",
-  "date_dir": "after",
-  "answer_type": "money"
- },
  "that number for the up irrigation account looks too clean, so what's the actual gap between what they've sanctioned and what we've billed?": {
   "operation": "rank_diff",
   "engineer": null,
@@ -475,11 +458,11 @@
   "date_dir": null,
   "answer_type": "count"
  },
- "i\u2019m fairly certain jaya desai\u2019s pmp for the odisha pkg-59 stormwater drainage package was issued on march 10th, 2021, but could you confirm whether my recollection is right on how many days actually passed from that date until the project wrapped up?": {
-  "operation": "days",
-  "engineer": "Jaya Desai",
+ "sunita joshi\u2019s pmp issued 2021-03-10\u2014what\u2019s the combined value of the projects she led that completed after that date, since we need it to lock the bid submission?": {
+  "operation": "sum",
+  "engineer": "Sunita Joshi",
   "credential_number": null,
-  "reference_project": "stormWater drainaGe \u2014 odisha PkG-59",
+  "reference_project": null,
   "client": null,
   "exclude_categories": [],
   "category_a": null,
@@ -489,8 +472,8 @@
   "threshold": null,
   "threshold_dir": ">=",
   "date_anchor": "2021-03-10",
-  "date_dir": null,
-  "answer_type": "days"
+  "date_dir": "after",
+  "answer_type": "money"
  },
  "imran joshi six sigma black belt project, what\u2019s the rupee gap between avg and median, negative if avg dips?": {
   "operation": "avg_minus_median",
@@ -508,6 +491,23 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "money"
+ },
+ "i\u2019m fairly certain jaya desai\u2019s pmp for the odisha pkg-59 stormwater drainage package was issued on march 10th, 2021, but could you confirm whether my recollection is right on how many days actually passed from that date until the project wrapped up?": {
+  "operation": "days",
+  "engineer": "Jaya Desai",
+  "credential_number": null,
+  "reference_project": "stormWater drainaGe \u2014 odisha PkG-59",
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": "2021-03-10",
+  "date_dir": null,
+  "answer_type": "days"
  },
  "lakshya engineering & construction, what is the exact difference in value between our largest completed project and the second-largest?": {
   "operation": "rank_diff",
@@ -543,23 +543,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "trishakti power generation corporation\u2019s 2022 and 2023 work completed values are needed right now for the submission cutoff\u2014what\u2019s the actual dollar amount between them?": {
-  "operation": "sum",
-  "engineer": null,
-  "credential_number": null,
-  "reference_project": null,
-  "client": "Trishakti Power Generation Corporation",
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": 2022,
-  "year_b": 2023,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
  "could you please calculate the aggregate value of the works suresh desai led that reached completion after his pmp was issued on 2021-03-10?": {
   "operation": "sum",
   "engineer": "Suresh Desai",
@@ -575,6 +558,23 @@
   "threshold_dir": ">=",
   "date_anchor": "2021-03-10",
   "date_dir": "after",
+  "answer_type": "money"
+ },
+ "trishakti power generation corporation\u2019s 2022 and 2023 work completed values are needed right now for the submission cutoff\u2014what\u2019s the actual dollar amount between them?": {
+  "operation": "sum",
+  "engineer": null,
+  "credential_number": null,
+  "reference_project": null,
+  "client": "Trishakti Power Generation Corporation",
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": 2022,
+  "year_b": 2023,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
   "answer_type": "money"
  },
  "i\u2019m still wrapping my head around how we pull these numbers, but what\u2019s the actual gap between the 2015 and 2017 value of work completed for the central works & buildings bureau?": {
@@ -628,23 +628,6 @@
   "date_dir": null,
   "answer_type": "count"
  },
- "lakshmi ghosh\u2019s pmp on the gujarat steel truss bridge, what\u2019s the total value of all completed trishakti work?": {
-  "operation": "sum",
-  "engineer": "Lakshmi Ghosh",
-  "credential_number": null,
-  "reference_project": "steel trUss BridGe \u2014 GUJarat PkG-112",
-  "client": "Trishakti Power Generation Corporation",
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
  "when finalizing the audit-ready submission for the national expressway development authority, what is the combined value of all completed assignments priya patel has delivered under her pmp credential, beginning with her work on the anganwadi centre \u2014 jharkhand pkg-142 project?": {
   "operation": "sum",
   "engineer": "Priya Patel",
@@ -679,6 +662,23 @@
   "date_dir": null,
   "answer_type": "days"
  },
+ "lakshmi ghosh\u2019s pmp on the gujarat steel truss bridge, what\u2019s the total value of all completed trishakti work?": {
+  "operation": "sum",
+  "engineer": "Lakshmi Ghosh",
+  "credential_number": null,
+  "reference_project": "steel trUss BridGe \u2014 GUJarat PkG-112",
+  "client": "Trishakti Power Generation Corporation",
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
+ },
  "subarnarekha valley corporation shows works we have awarded, so what is the amount after we cross-check against the invoice amount?": {
   "operation": "financial_gap",
   "engineer": null,
@@ -694,6 +694,23 @@
   "threshold_dir": ">=",
   "date_anchor": null,
   "date_dir": "after",
+  "answer_type": "money"
+ },
+ "jharkhand municipal corporation is where i\u2019m starting, but i\u2019m still learning how we track bid credentials\u2014how much more contract value would we need to bring in to hit the fifty crore mark?": {
+  "operation": "gap_threshold",
+  "engineer": null,
+  "credential_number": null,
+  "reference_project": null,
+  "client": "Jharkhand Municipal Corporation",
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": 500000000,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
   "answer_type": "money"
  },
  "pmp; manoj verma, how many work categories has he actually wrapped up?": {
@@ -712,23 +729,6 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "count"
- },
- "jharkhand municipal corporation is where i\u2019m starting, but i\u2019m still learning how we track bid credentials\u2014how much more contract value would we need to bring in to hit the fifty crore mark?": {
-  "operation": "gap_threshold",
-  "engineer": null,
-  "credential_number": null,
-  "reference_project": null,
-  "client": "Jharkhand Municipal Corporation",
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": 500000000,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
  },
  "i\u2019m still finding my footing on the bid desk, so when i pull up sanjay joshi\u2019s pmp for the west bengal pkg-73 stp, how do i calculate the rupee difference between the mean and median contract values for the completed works under that client, and should i leave the result negative if the mean is lower?": {
   "operation": "avg_minus_median",
@@ -815,23 +815,6 @@
   "date_dir": "after",
   "answer_type": "percent"
  },
- "neha\u2019s pmp bituminous overlay odisha pkg-35, what\u2019s the average size across all our finished work for that client?": {
-  "operation": "avg",
-  "engineer": "Neha Chopra",
-  "credential_number": null,
-  "reference_project": "BitUminoUs overlay \u2014 odisha PkG-35",
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
  "i\u2019m trying to check my memory on kavita reddy\u2019s pmp from 2021-03-10\u2014was the combined value of the projects she led that finished after that date exactly what i\u2019m recalling?": {
   "operation": "sum",
   "engineer": "Kavita Reddy",
@@ -847,6 +830,23 @@
   "threshold_dir": ">=",
   "date_anchor": "2021-03-10",
   "date_dir": "after",
+  "answer_type": "money"
+ },
+ "neha\u2019s pmp bituminous overlay odisha pkg-35, what\u2019s the average size across all our finished work for that client?": {
+  "operation": "avg",
+  "engineer": "Neha Chopra",
+  "credential_number": null,
+  "reference_project": "BitUminoUs overlay \u2014 odisha PkG-35",
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
   "answer_type": "money"
  },
  "i\u2019m pretty sure suvarna projects limited\u2019s work completed value was sitting near 380 crores back in 2018, but i want to verify my recollection\u2014what\u2019s the actual variance between that 2018 number and their 2021 figure?": {
@@ -1240,6 +1240,23 @@
   "date_dir": null,
   "answer_type": "days"
  },
+ "national expressway development authority\u2019s 2017 completed work value is a bit fuzzy in my memory, but i want to confirm my impression\u2014what\u2019s the actual gap between that 2017 figure and their 2021 total?": {
+  "operation": "year_diff",
+  "engineer": null,
+  "credential_number": null,
+  "reference_project": null,
+  "client": "National Expressway Development Authority",
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": 2017,
+  "year_b": 2017,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
+ },
  "i\u2019m reviewing meera roy\u2019s march 10th pmp for the jharkhand hydro tunnel package, but that initial issue date doesn\u2019t match the actual project window i\u2019m seeing\u2014can you calculate the real elapsed period from when that certification was issued until the tunnel work wrapped up?": {
   "operation": "days",
   "engineer": "Meera Roy",
@@ -1257,17 +1274,17 @@
   "date_dir": null,
   "answer_type": "days"
  },
- "national expressway development authority\u2019s 2017 completed work value is a bit fuzzy in my memory, but i want to confirm my impression\u2014what\u2019s the actual gap between that 2017 figure and their 2021 total?": {
-  "operation": "year_diff",
+ "mega infrastructure authority; excluding water treatment\u2014i\u2019m seeing the headline figure, but that\u2019s clearly inflated by the treatment projects, so what\u2019s the actual sum once we carve that out?": {
+  "operation": "sum_exclude",
   "engineer": null,
   "credential_number": null,
-  "reference_project": null,
-  "client": "National Expressway Development Authority",
+  "reference_project": "Water treatment Plant \u2014 West BenGal PkG-44",
+  "client": "Mega Infrastructure Authority",
   "exclude_categories": [],
   "category_a": null,
   "category_b": null,
-  "year_a": 2017,
-  "year_b": 2017,
+  "year_a": null,
+  "year_b": null,
   "threshold": null,
   "threshold_dir": ">=",
   "date_anchor": null,
@@ -1290,23 +1307,6 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "count"
- },
- "mega infrastructure authority; excluding water treatment\u2014i\u2019m seeing the headline figure, but that\u2019s clearly inflated by the treatment projects, so what\u2019s the actual sum once we carve that out?": {
-  "operation": "sum_exclude",
-  "engineer": null,
-  "credential_number": null,
-  "reference_project": "Water treatment Plant \u2014 West BenGal PkG-44",
-  "client": "Mega Infrastructure Authority",
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
  },
  "suvarna projects limited; excluding water supply \u2014 what\u2019s the final tally for the rest before we lock the bid?": {
   "operation": "sum_exclude",
@@ -1826,23 +1826,6 @@
   "date_dir": null,
   "answer_type": "days"
  },
- "sanjay joshi's pmp: what's the rupee mean-median gap for his client's works, negative if mean is lower?": {
-  "operation": "avg_minus_median",
-  "engineer": "Sanjay Joshi",
-  "credential_number": null,
-  "reference_project": null,
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
  "suvarna projects limited \u2014 could you please confirm the final numerical value representing the share of our projects with that client that are supported by client testimonials, expressed as a whole number out of one hundred?": {
   "operation": "percent",
   "engineer": null,
@@ -1860,6 +1843,23 @@
   "date_dir": null,
   "answer_type": "percent"
  },
+ "sanjay joshi's pmp: what's the rupee mean-median gap for his client's works, negative if mean is lower?": {
+  "operation": "avg_minus_median",
+  "engineer": "Sanjay Joshi",
+  "credential_number": null,
+  "reference_project": null,
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
+ },
  "i\u2019m still new to the jal nigam, jharkhand portfolio\u2014could you tell me what the year-on-year movement in completed work value was between 2020 and 2021?": {
   "operation": "sum",
   "engineer": null,
@@ -1871,23 +1871,6 @@
   "category_b": null,
   "year_a": 2020,
   "year_b": 2021,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
- "naveen roy's pmp for the cable stayed bridge \u2014 delhi pkg-109; what's the mean size across the client's full portfolio?": {
-  "operation": "avg",
-  "engineer": "Naveen Roy",
-  "credential_number": null,
-  "reference_project": "CaBle stayed BridGe \u2014 delhi PkG-109",
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
   "threshold": null,
   "threshold_dir": ">=",
   "date_anchor": null,
@@ -1910,6 +1893,23 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "count"
+ },
+ "naveen roy's pmp for the cable stayed bridge \u2014 delhi pkg-109; what's the mean size across the client's full portfolio?": {
+  "operation": "avg",
+  "engineer": "Naveen Roy",
+  "credential_number": null,
+  "reference_project": "CaBle stayed BridGe \u2014 delhi PkG-109",
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
  },
  "could you please confirm the aggregate figure for our jal nigam, uttar pradesh engagements after the water treatment division is excluded?": {
   "operation": "sum_exclude",
@@ -1945,23 +1945,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "that first total i saw for lakshmi ghosh\u2019s pmp issued 2021-03-10 clearly includes earlier completions, so what\u2019s the actual combined value of just the works she led that finished after that march date?": {
-  "operation": "sum",
-  "engineer": "Lakshmi Ghosh",
-  "credential_number": null,
-  "reference_project": null,
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": "2021-03-10",
-  "date_dir": "after",
-  "answer_type": "money"
- },
  "meera roy's pmp for the sewerage network \u2014 odisha pkg-17 \u2014 i'm locking the bid submission and need it for the deadline, so what percentage of everything billed to that client has actually been collected \u2014 as a number out of 100, not a fraction?": {
   "operation": "financial_percent",
   "engineer": "Meera Roy",
@@ -1978,6 +1961,23 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "percent"
+ },
+ "that first total i saw for lakshmi ghosh\u2019s pmp issued 2021-03-10 clearly includes earlier completions, so what\u2019s the actual combined value of just the works she led that finished after that march date?": {
+  "operation": "sum",
+  "engineer": "Lakshmi Ghosh",
+  "credential_number": null,
+  "reference_project": null,
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": "2021-03-10",
+  "date_dir": "after",
+  "answer_type": "money"
  },
  "subarnarekha valley corporation is still a bit of a puzzle for me, so could you help me figure out the combined value of only the assignments that clear the two crore mark?": {
   "operation": "sum_threshold",
@@ -2166,6 +2166,23 @@
   "date_dir": null,
   "answer_type": "money"
  },
+ "regarding meera roy\u2019s pmp issued on march 10, 2021, what is the precise combined value of the assignments she directed that wrapped up after that date?": {
+  "operation": "sum",
+  "engineer": "Meera Roy",
+  "credential_number": null,
+  "reference_project": null,
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": "2021-03-10",
+  "date_dir": "after",
+  "answer_type": "money"
+ },
  "amit iyer\u2019s six sigma black belt certification for the rigid pavement \u2014 madhya pradesh pkg-7 job is on my desk, but the number currently circulating feels like a localized read rather than the full picture, so what\u2019s the actual mean size across every project we\u2019ve wrapped up for the organization that brought us in for that pavement contract?": {
   "operation": "avg",
   "engineer": "Amit Iyer",
@@ -2198,23 +2215,6 @@
   "threshold_dir": ">=",
   "date_anchor": null,
   "date_dir": null,
-  "answer_type": "money"
- },
- "regarding meera roy\u2019s pmp issued on march 10, 2021, what is the precise combined value of the assignments she directed that wrapped up after that date?": {
-  "operation": "sum",
-  "engineer": "Meera Roy",
-  "credential_number": null,
-  "reference_project": null,
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": "2021-03-10",
-  "date_dir": "after",
   "answer_type": "money"
  },
  "mega infra authority contract value seems high, can you pull the delta between secured work and submitted claims?": {
@@ -2648,23 +2648,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "pritis pmp hit mar 10 2021 for the west bengal hospital block, how many days to wrap up?": {
-  "operation": "days",
-  "engineer": "Priti Pillai",
-  "credential_number": null,
-  "reference_project": "hosPital BloCk \u2014 West BenGal PkG-60",
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": "2021-03-10",
-  "date_dir": null,
-  "answer_type": "days"
- },
  "the figure circulating for suvarna projects limited looks too neat to be accurate\u2014could you actually verify the completed project values and work out the real difference between our largest one and the second largest?": {
   "operation": "rank_diff",
   "engineer": null,
@@ -2681,6 +2664,23 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "money"
+ },
+ "pritis pmp hit mar 10 2021 for the west bengal hospital block, how many days to wrap up?": {
+  "operation": "days",
+  "engineer": "Priti Pillai",
+  "credential_number": null,
+  "reference_project": "hosPital BloCk \u2014 West BenGal PkG-60",
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": "2021-03-10",
+  "date_dir": null,
+  "answer_type": "days"
  },
  "i\u2019m checking priti pillai\u2019s pmp for the material handling plant \u2014 madhya pradesh pkg-68 and i\u2019m fairly certain the collection figure we\u2019re tracking is in the mid-seventies, but i want to confirm whether my recollection is right\u2014what percentage of everything billed to that client has actually been collected as a number out of 100, not a fraction?": {
   "operation": "financial_percent",
@@ -2871,23 +2871,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "i'm reviewing tanvir menon's pmp for the rail tunnel \u2014 jharkhand pkg-102, but i need the mean scale across every finished assignment we've delivered to the commissioning authority for that one.": {
-  "operation": "avg",
-  "engineer": "Tanvir Menon",
-  "credential_number": null,
-  "reference_project": "rail tUnnel \u2014 Jharkhand PkG-102",
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
  "neha chopra's pmp issued 2021-03-10 is the reference\u2014what is the combined value of the works she led that completed after that date, cross-checked against the completion dates?": {
   "operation": "sum",
   "engineer": "Neha Chopra",
@@ -2905,11 +2888,11 @@
   "date_dir": "after",
   "answer_type": "money"
  },
- "asked by someone reconciling records. pmp; meera roy. cross-checking against the client portfolio, what is the rupee difference between the average and median contract values for the works, and should the figure be negative if the average is smaller?": {
-  "operation": "avg_minus_median",
-  "engineer": "Meera Roy",
+ "i'm reviewing tanvir menon's pmp for the rail tunnel \u2014 jharkhand pkg-102, but i need the mean scale across every finished assignment we've delivered to the commissioning authority for that one.": {
+  "operation": "avg",
+  "engineer": "Tanvir Menon",
   "credential_number": null,
-  "reference_project": null,
+  "reference_project": "rail tUnnel \u2014 Jharkhand PkG-102",
   "client": null,
   "exclude_categories": [],
   "category_a": null,
@@ -2933,6 +2916,23 @@
   "category_b": null,
   "year_a": 2016,
   "year_b": 2023,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
+ },
+ "asked by someone reconciling records. pmp; meera roy. cross-checking against the client portfolio, what is the rupee difference between the average and median contract values for the works, and should the figure be negative if the average is smaller?": {
+  "operation": "avg_minus_median",
+  "engineer": "Meera Roy",
+  "credential_number": null,
+  "reference_project": null,
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
   "threshold": null,
   "threshold_dir": ">=",
   "date_anchor": null,
@@ -3646,6 +3646,40 @@
   "date_dir": null,
   "answer_type": "money"
  },
+ "just pulled jaya desai\u2019s pmp from march 10, 2021 off the desk\u2014what\u2019s the combined value of only the assignments she headed that wrapped up after that issuance date?": {
+  "operation": "sum",
+  "engineer": "Jaya Desai",
+  "credential_number": null,
+  "reference_project": null,
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": "2021-03-10",
+  "date_dir": "after",
+  "answer_type": "money"
+ },
+ "pmp; naveen roy. need rupee gap between average and median values for that client's work, negative if average lower?": {
+  "operation": "avg_minus_median",
+  "engineer": "Naveen Roy",
+  "credential_number": null,
+  "reference_project": null,
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
+ },
  "cross-checking suresh desai pmp handpump installation gujarat pkg-155 against payment logs, what percentage of billed amount collected out of 100?": {
   "operation": "financial_percent",
   "engineer": "Suresh Desai",
@@ -3680,23 +3714,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "just pulled jaya desai\u2019s pmp from march 10, 2021 off the desk\u2014what\u2019s the combined value of only the assignments she headed that wrapped up after that issuance date?": {
-  "operation": "sum",
-  "engineer": "Jaya Desai",
-  "credential_number": null,
-  "reference_project": null,
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": "2021-03-10",
-  "date_dir": "after",
-  "answer_type": "money"
- },
  "i\u2019m cross-checking suresh desai\u2019s march 10, 2021 pmp for the odisha residential quarters package and noticed the preliminary tally looks off\u2014could you actually calculate the real interval from that certification date through to final completion?": {
   "operation": "days",
   "engineer": "Suresh Desai",
@@ -3713,23 +3730,6 @@
   "date_anchor": "2021-03-10",
   "date_dir": null,
   "answer_type": "days"
- },
- "pmp; naveen roy. need rupee gap between average and median values for that client's work, negative if average lower?": {
-  "operation": "avg_minus_median",
-  "engineer": "Naveen Roy",
-  "credential_number": null,
-  "reference_project": null,
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
  },
  "public health engineering dept odisha awarded works, what\u2019s the gap between total award value and our billed amount?": {
   "operation": "rank_diff",
@@ -3901,23 +3901,6 @@
   "date_dir": null,
   "answer_type": "percent"
  },
- "hey, i\u2019m just grabbing sunita joshi\u2019s pmp for the uttar pradesh residential quarters package, and since i\u2019m still learning how we track client portfolios, could you calculate the rupee difference between the average and median contract values for the commissioning client\u2019s completed jobs, and let me know if i should mark it negative whenever the average ends up lower?": {
-  "operation": "avg_minus_median",
-  "engineer": "Sunita Joshi",
-  "credential_number": null,
-  "reference_project": "residential QUarters \u2014 Uttar Pradesh PkG-25",
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": null,
-  "answer_type": "money"
- },
  "could you please confirm the collection percentage out of 100 for chandan banerjee\u2019s pmp on the six-lane highway \u2014 west bengal pkg-116?": {
   "operation": "financial_percent",
   "engineer": "Chandan Banerjee",
@@ -3941,6 +3924,23 @@
   "credential_number": null,
   "reference_project": null,
   "client": "National Special Projects Office",
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": null,
+  "answer_type": "money"
+ },
+ "hey, i\u2019m just grabbing sunita joshi\u2019s pmp for the uttar pradesh residential quarters package, and since i\u2019m still learning how we track client portfolios, could you calculate the rupee difference between the average and median contract values for the commissioning client\u2019s completed jobs, and let me know if i should mark it negative whenever the average ends up lower?": {
+  "operation": "avg_minus_median",
+  "engineer": "Sunita Joshi",
+  "credential_number": null,
+  "reference_project": "residential QUarters \u2014 Uttar Pradesh PkG-25",
+  "client": null,
   "exclude_categories": [],
   "category_a": null,
   "category_b": null,
@@ -4156,23 +4156,6 @@
   "date_dir": null,
   "answer_type": "money"
  },
- "pmp; tanvir menon, what\u2019s the exact count of distinct work categories he\u2019s personally led to completion before we lock the submission?": {
-  "operation": "distinct_count",
-  "engineer": "Tanvir Menon",
-  "credential_number": null,
-  "reference_project": null,
-  "client": null,
-  "exclude_categories": [],
-  "category_a": null,
-  "category_b": null,
-  "year_a": null,
-  "year_b": null,
-  "threshold": null,
-  "threshold_dir": ">=",
-  "date_anchor": null,
-  "date_dir": "before",
-  "answer_type": "count"
- },
  "deepa chatterjee\u2019s pmp on the stormwater drainage \u2014 madhya pradesh pkg-24 is what i\u2019m looking at, and i\u2019m trying to verify the collection percentage out of 100, and i\u2019m fairly certain it\u2019s in the high seventies, but could you confirm if that\u2019s correct?": {
   "operation": "financial_percent",
   "engineer": "Deepa Chatterjee",
@@ -4189,6 +4172,23 @@
   "date_anchor": null,
   "date_dir": null,
   "answer_type": "percent"
+ },
+ "pmp; tanvir menon, what\u2019s the exact count of distinct work categories he\u2019s personally led to completion before we lock the submission?": {
+  "operation": "distinct_count",
+  "engineer": "Tanvir Menon",
+  "credential_number": null,
+  "reference_project": null,
+  "client": null,
+  "exclude_categories": [],
+  "category_a": null,
+  "category_b": null,
+  "year_a": null,
+  "year_b": null,
+  "threshold": null,
+  "threshold_dir": ">=",
+  "date_anchor": null,
+  "date_dir": "before",
+  "answer_type": "count"
  },
  "i'm still getting my bearings with the trishakti account, but could you quickly check the heavier contracts clearing the twenty-five crore mark and let me know what they add up to?": {
   "operation": "sum_threshold",
@@ -5674,16 +5674,16 @@
   "engineer": null,
   "credential_number": null,
   "reference_project": null,
-  "client": null,
+  "client": "Public Works Department, Govt of Gujarat",
   "exclude_categories": [],
   "category_a": "Irrigation",
-  "category_b": "Roads Highways",
+  "category_b": "Roads & Highways",
   "year_a": null,
   "year_b": null,
   "threshold": null,
   "threshold_dir": ">=",
   "date_anchor": null,
   "date_dir": null,
-  "answer_type": "count"
+  "answer_type": "money"
  }
 }
